@@ -80,12 +80,5 @@ public class TesKlikButton {
         onView(withId(R.id.button_equal)).perform(click());
         onView(withId(R.id.output)).check(matches(withText("0")));
     }
-    @Test
-    public void tesPlusminus() {
-        onView(withId(R.id.button1)).perform(click());
-        onView(withId(R.id.button_para2)).perform(click());
-        onView(withId(R.id.button1)).perform(click());
-        onView(withId(R.id.button_equal)).perform(click());
-        onView(withId(R.id.output)).check(matches(withText("0")));
-    }
+
 }
